@@ -1,6 +1,6 @@
 <?php
 
-namespace CodeAgenda;
+namespace App;
 
 use Illuminate\Auth\Authenticatable;
 use Laravel\Lumen\Auth\Authorizable;
