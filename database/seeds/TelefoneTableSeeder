@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class DatabaseSeeder extends Seeder
+class TelefoneTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,8 +11,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-         $this->call('PessoaTableSeeder');
-         $this->call('TelefoneTableSeeder');
-         Model::reguard();
+        factory(\CodeAgenda\Entities\Telefone::class, 80);
     }
 }

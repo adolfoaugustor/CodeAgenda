@@ -13,14 +13,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Telefone extends Model
 {
-    protected $table = ´telefones´;
+    protected $table = 'telefones';
 
     protected $fillable = [
-        ´descrição´
-        ´cod_pais´
-        ´cod_pais´,
-        ´ddd´,
-        ´prefixo´,
-        ´sufixo´
+        'descrição',
+        'cod_país',
+        'ddd',
+        'prefixo',
+        'sufixo'
     ];
 }
