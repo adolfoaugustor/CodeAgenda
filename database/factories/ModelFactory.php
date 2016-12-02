@@ -20,19 +20,19 @@
 
 $factory->define(\CodeAgenda\Entities\Pessoa::class, function ($faker) {
     return [
-        'nome'=> $faker ->name,
-        'apelido'=> $faker ->firstname,
-        'sexo'=> $faker ->randomElement(['F', 'M']),
+        'nome'=>$faker->name,
+        'apelido'=> $faker->firstname,
+        'sexo'=> $faker->randomElement(['F','M'])
     ];
 });
 
 $factory->define(\CodeAgenda\Entities\Telefone::class, function ($faker) {
     return [
-        'descrição'=> $faker ->randomElement(['Residencial', 'Comercial', 'Celular', 'Recados']),
-        'cod_país'=> $faker ->optional(0.7, 55)->numberBetween(1,197),
-        'ddd'=> $faker ->numberBetween(11, 85),
-        'prefixo'=> $faker ->randomNumber(4),
-        'sufixo'=> $faker ->randomNumber(4),
-        'pessoa_id'=> $faker ->faker->randomBetween(1, 30)
+        'descrição'=> $faker->randomElement(['Residencial', 'Comercial', 'Celular', 'Recados']),
+        'cod_país'=> $faker->optional(0.7, 55)->numberBetween(1,197),
+        'ddd'=> $faker->numberBetween(11, 85),
+        'prefixo'=> $faker->randomNumber(4),
+        'sufixo'=> $faker->randomNumber(4),
+        'pessoa_id'=> $faker->numberBetween(1, 30)
     ];
 });
