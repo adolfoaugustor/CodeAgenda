@@ -1,0 +1,22 @@
+{
+  "name": "CodeAgenda",
+  "description": "Agenda telefonica",
+  "main": "",
+  "authors": [
+    "adolfoaugusto <adolfo.rodrigues@indexdigita.com.br>"
+  ],
+  "license": "s",
+  "homepage": "https://github.com/adolfoaugusto/CodeAgenda",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "fontawesome#^4.7.0"
+  }
+}
