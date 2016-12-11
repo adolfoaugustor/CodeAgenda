@@ -2,8 +2,11 @@
 
 @section('content')
     <div class="col-md-6">
-        <h3>Deseja realmente apagar este contato?</h3>
-        <form action="{{ route('pessoa.destroy', ['id' => $pessoa->id]) }}" method="post">
+        <h3>
+            Deseja realmente apagar este contato? <br/>
+            <small>{{$telefone->descrição}}: {{$telefone->numero}}</small>
+        </h3>
+        <form action="{{ route('telefone.destroy', ['id' => $telefone->id]) }}" method="post">
             <input type="hidden" name="_method" value="DELETE"/>
             <button type="submit" class="btn btn-danger">Apagar</button>
             <a href="{{ route('agenda.index') }}" class="btn btn-primary">Voltar</a>

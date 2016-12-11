@@ -5,7 +5,7 @@
         <td>{{$telefone->descrição}}</td>
         <td>{{$telefone->numero}}</td>
         <td>
-            <a href="{{route('telefone.destroy', ['id' => $telefone->id]) }}" class="text-danger" data-toggle="tooltip" data-placement="top" title="Apagar"><i class="fa fa-minus-circle"></i></a>
+            <a href="{{route('telefone.delete', ['id' => $telefone->id]) }}" class="text-danger" data-toggle="tooltip" data-placement="top" title="Apagar"><i class="fa fa-minus-circle"></i></a>
         </td>
     </tr>
     @endforeach

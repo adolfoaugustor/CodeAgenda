@@ -59,9 +59,9 @@ $app->singleton(
 |
 */
 
-// $app->middleware([
-//    CodeAgenda\Http\Middleware\ExampleMiddleware::class
-// ]);
+//$app->middleware([
+//   CodeAgenda\Http\Middleware\ExampleMiddleware::class,
+//]);
 
 // $app->routeMiddleware([
 //     'auth' => CodeAgenda\Http\Middleware\Authenticate::class,
