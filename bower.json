@@ -1,12 +1,13 @@
 {
   "name": "CodeAgenda",
-  "description": "Agenda telefonica",
+  "description": "Agenda Telefonica",
   "main": "",
   "authors": [
     "adolfoaugusto <adolfo.rodrigues@indexdigita.com.br>"
   ],
-  "license": "s",
-  "homepage": "https://github.com/adolfoaugusto/CodeAgenda",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
